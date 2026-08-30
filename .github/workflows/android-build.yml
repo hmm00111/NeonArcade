@@ -27,8 +27,7 @@ jobs:
 
       - name: Extract NeonArcade project
         run: |
-          rm -rf project
-          mkdir project
+          mkdir -p project
           unzip -q NeonArcade_Android_Project.zip -d project
 
       - name: Build NeonArcade
